@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 class="main-heading">Posts</h1>
+  <div class="search-input-wrapper">
+    <img src="assets/searchIcon.svg" class="search-icon">
+    <input type="text" class="search-input" placeholder="Start typing...">
+  </div>
+</header>
+
+
+<div class="loader">
+  <span>Loading</span>
+  <span class="spinner"></span>
+</div>
+
+<table class="d-none">
+  <thead>
+  <tr>
+    <th class="id">Post ID</th>
+    <th class="user-id">User ID</th>
+    <th class="title">Title</th>
+    <th class="body">Post</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>

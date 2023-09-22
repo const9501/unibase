@@ -1,0 +1,47 @@
+const arr = [10, 12, 15, 21]
+for (let i = 0; i < arr.length; i++) {
+  setTimeout(() => {
+    console.log(arr[i] > 13 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`)
+  }, 3000)
+}
+
+Код и так выводит Bad: 10, Bad: 12, Good: 15, Good: 21
+Только делает он это не в одну строку, как написано в задании, а в 4 разных строки и без запятых
+Вот так:
+Bad: 10
+Bad: 12
+Good: 15
+Good: 21
+Если я правильно понял задачу, и она была именно в том, чтобы вывести все в одну строку и с запятыми, то код ниже
+
+
+/////// 1 вариант
+
+let str = ''
+for (let i = 0; i < arr.length; i++) {
+  if(i === arr.length - 1) {
+    str += arr[i] > 13 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`
+  } else {
+    str += arr[i] > 13 ? `Good: ${arr[i]}, ` : `Bad: ${arr[i]}, `
+  }
+}
+console.log(str)
+/*
+Bad: 10, Bad: 12, Good: 15, Good: 21
+*/
+
+
+/////// 2 вариант
+
+str = ''
+for (let i = 0; i < arr.length; i++) {
+  str += arr[i] > 13 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`
+  if(i !== arr.length - 1) {
+    str += `, `
+  }
+}
+console.log(str)
+/*
+Bad: 10, Bad: 12, Good: 15, Good: 21
+*/
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@800&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<button class="open-modal-btn button">
+  Написать
+</button>
+
+
+<form class="modal-body form" novalidate>
+
+  <h1 class="heading">Стать партнёром проекта</h1>
+
+
+  <div class="inputs-section">
+
+    <div class="top-section">
+
+      <div class="top-section__inputs-wrapper">
+
+        <div class="input-wrapper">
+        <span class="input-wrapper__title">
+          <span class="red">✱</span> Название оргнанизации
+        </span>
+          <input required class="input" name="name" type="text">
+        </div>
+
+        <div class="input-wrapper">
+        <span class="input-wrapper__title">
+          <span class="red">✱</span> Телефон
+        </span>
+          <input required class="input" name="phone" type="text">
+        </div>
+
+        <div class="input-wrapper">
+        <span class="input-wrapper__title">
+          <span class="red">✱</span> E-mail
+        </span>
+          <input required class="input" name="email" type="text">
+        </div>
+
+      </div>
+
+      <div class="file-input-wrapper">
+          <span class="file-input__title">
+            <span class="red">✱</span> Логотип (jpeg, png)
+          </span>
+
+        <div class="file-input-container">
+
+          <div class="delete-button">
+            <img src="assets/closeIcon.svg" class="delete-button__icon" alt="X">
+          </div>
+
+          <div class="file-input-container__text-content">
+            <img src="assets/filePickerIcon.svg" class="file-picker-icon">
+            <span class="file-input-container__text">
+              Выберите <br> файл
+            </span>
+          </div>
+
+          <img src="#" class="file-input-container__preview-img d-none">
+
+          <input type="file" required name="file" accept=".jpg, .png, .jpeg" class="file-input-container__input">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="input-wrapper">
+        <span class="input-wrapper__title">
+          <span class="red">✱</span> Направление
+        </span>
+      <select class="select" name="direction" id="">
+        <option value="" disabled selected hidden></option>
+        <option value="Экология">Экология</option>
+        <option value="Логистика">Логистика</option>
+        <option value="Финансы">Финансы</option>
+        <option value="Образование">Образование</option>
+        <option value="Консалтинг">Консалтинг</option>
+      </select>
+    </div>
+
+    <div class="link-input-wrapper">
+      <input class="input" type="text">
+      <img src="assets/siteIcon.svg" class="link-icon" alt="Сайт">
+    </div>
+
+    <div class="link-input-wrapper">
+      <input class="input" type="text">
+      <img src="assets/vkIcon.svg" class="link-icon" alt="VK">
+    </div>
+
+    <div class="link-input-wrapper">
+      <input class="input" type="text">
+      <img src="assets/okIcon.svg" class="link-icon" alt="OK">
+    </div>
+
+    <div class="link-input-wrapper">
+      <input class="input" type="text">
+      <img src="assets/fbIcon.svg" class="link-icon" alt="FB">
+    </div>
+
+    <div class="link-input-wrapper">
+      <input class="input" type="text">
+      <img src="assets/instIcon.svg" class="link-icon" alt="INST">
+    </div>
+
+    <div class="link-input-wrapper">
+      <input class="input" type="text">
+      <img src="assets/ytIcon.svg" class="link-icon" alt="YT">
+    </div>
+
+    <div class="input-wrapper">
+        <span class="input-wrapper__title">
+          Руководитель
+        </span>
+      <input class="input" type="text">
+    </div>
+
+
+  </div>
+
+  <div class="buttons-wrapper">
+    <button type="submit" disabled class="primary-btn button submit-btn">Стать партнёром проекта</button>
+    <button class="close-modal-btn">Отменить</button>
+  </div>
+
+
+</form>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
