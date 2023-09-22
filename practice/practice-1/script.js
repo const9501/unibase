@@ -109,6 +109,12 @@ select.addEventListener('blur', () => {
 form.onsubmit = (event) => {
 	event.preventDefault()
 	alert('send')
+	form.reset()
+	inputText.classList.remove('d-none')
+	img.classList.add('d-none')
+	fileInput.value=''
+	validateForm(form)
+	modalBody.classList.remove('open')
 }
 
 
